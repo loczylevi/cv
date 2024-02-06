@@ -1,0 +1,314 @@
+.kepcicoma{
+  border: 6px ridge white;
+  border-radius: 25px;
+  transition:all .5s;
+  z-index: 2;
+}
+.kepcicoma:hover{
+  transform: scale(0.8) rotate(-10deg);
+}
+
+body{
+    background-color: #880808;
+}
+
+  .kontener{
+    border: 2px solid white;
+    border-top: 10px solid rgb(255, 255, 255);
+    border-left: 4px solid white;
+    /*background-image: linear-gradient(to bottom right, rgba(255,0,0,0), rgba(255,0,0,1));*/
+    background-image: linear-gradient(to bottom right, #80000d, mediumblue);
+    /*background-image: linear-gradient(to bottom right, rgba(123,0,0,1), rgba(107,107,107,0));*/
+    border-radius: 25px;
+    font-size: 25px;
+   color: white;
+   font-weight: bold;
+   font-family: 'Times New Roman', Times, serif;
+}
+.elol{
+  z-index: 1;
+}
+
+
+.szoveg{
+   /*text-align: center;*/
+   font-size: 25px;
+   color: white;
+   font-family: 'Times New Roman', Times, serif;
+
+
+
+}
+
+
+#feher_szoveg{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 25px;
+   color: white;
+   -moz-text-fill-color: white;
+-webkit-text-fill-color:white ;
+   -moz-text-stroke-color: black;
+-webkit-text-stroke-color: black;
+   -moz-text-stroke-width: 1px;  
+-webkit-text-stroke-width: 1px;
+
+
+
+}
+
+.gomb {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(red, yellow);
+    position: relative;
+    animation: example 40s linear infinite; /* Végtelen ismétlés 4 másodperces időtartammal */
+    border-radius: 100%;
+    z-index:-1;
+  }
+
+  .gomb69 {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(gold, #D2042D, gold);
+    position: relative;
+    animation: example 50s linear infinite; /* Végtelen ismétlés 4 másodperces időtartammal */
+    animation-direction: reverse; 
+    border-radius: 100%;
+    z-index:-1;
+  }
+
+.gomb2 {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(to right, red , yellow);
+    position: relative;
+    animation: example2 40s linear infinite; /* Végtelen ismétlés 4 másodperces időtartammal */
+    border-radius: 100%;
+    animation-direction: reverse;  
+    z-index:-1;
+  }
+
+  .gomb3 {
+    width: 450px;
+    height: 450px;
+    background-image: linear-gradient(to bottom right, yellow, red, yellow);
+    position: relative;
+    animation: example 100s linear infinite; /* Végtelen ismétlés 4 másodperces időtartammal */
+    border-radius: 100%;
+    animation-direction: reverse;  
+    z-index:-2;
+  }
+  /*gold, #CC7722, rgb(116, 0, 0), #CC7722, gold*/
+  .gomb4 {
+    width: 550px;
+    height: 550px;
+    background-image: radial-gradient(gold, red, gold);
+    position: relative;
+    animation: example2 180s linear infinite; /* Végtelen ismétlés 4 másodperces időtartammal */
+    border-radius: 100%;
+    animation-direction: reverse;  
+    z-index:-3;
+  }
+
+  .gomb11 {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(#FFBF00, red, #FFBF00);
+    position: relative;
+    animation-direction: reverse;
+    animation: example 60s linear infinite; /* Végtelen ismétlés 4 másodperces időtartammal */
+    border-radius: 100%;
+    z-index:-1;
+    
+  }
+
+.gomb22 {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(red, #E4D00A);
+    position: relative;
+    animation: example2 40s linear infinite; /* Végtelen ismétlés 4 másodperces időtartammal */
+    border-radius: 100%; 
+    z-index:-1;
+  }
+
+  .gomb33 {
+    width: 450px;
+    height: 450px;
+    background-color: #FFC000;
+    background-image: linear-gradient(to bottom right, #FFC000, rgb(153, 0, 0));
+    position: relative;
+    animation: example2 80s linear infinite; /* Végtelen ismétlés 4 másodperces időtartammal */
+    border-radius: 100%;
+    z-index:-2;
+  }
+
+  .gomb44 {
+    width: 550px;
+    height: 550px;
+    background-image: linear-gradient(to bottom right, yellow, rgb(153, 0, 0), red, yellow);
+    position: relative;
+    animation: example2 120s linear infinite; /* Végtelen ismétlés 4 másodperces időtartammal */
+    border-radius: 100%; 
+    z-index:-2;
+  }
+  
+@keyframes example {
+    0%{
+        transform:rotate(0deg)
+                  translate(-165px)
+                  rotate(0deg);
+      
+      }
+      100%{
+        transform:rotate(460deg)
+                  translate(-390px)
+                  rotate(-460deg);
+      }
+
+}
+
+@keyframes example2 {
+    0%{
+        transform:rotate(0deg)
+                  translate(-165px)
+                  rotate(0deg);
+      
+      }
+      100%{
+        transform:rotate(600deg)
+                  translate(-600px)
+                  rotate(-600deg);
+      }
+
+}
+
+
+@keyframes moveOut {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(100vw + 100px)); /* Mozogjon ki a képernyőről */
+    }
+  }
+  
+  .circle {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(red, yellow);
+    border-radius: 50%;
+    position: absolute;
+    animation: moveOut 100s linear infinite; /* Végtelen ismétlés 4 másodperces időtartammal */
+  }
+
+
+
+
+  @keyframes moveInCircle {
+    0% {
+      transform: translateX(0) translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateX(calc(-5vw + 100px)) translateY(calc(300vh + 300px)) rotate(360deg);
+                    /*milyen szögbe mennyenek a golyok*/         /*mennyi ideig mennyenek*/
+    }
+  }
+
+  .circle {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(red, yellow);
+    border-radius: 50%;
+    position: absolute;
+    animation: moveInCircle 20s linear infinite;
+  }
+
+  /* Több kis kör hozzáadása */
+  .circle:nth-child(2) {
+    animation-delay: 50s; /* Késleltetés az animációk között */
+  }
+
+  .circle:nth-child(3) {
+    animation-delay: 100s;
+  }
+
+  .circle:nth-child(4) {
+    animation-delay: 150s;
+  }
+
+  .circle:nth-child(5) {
+    animation-delay: 200s;
+  }
+
+
+@media (max-width: 1205px) {
+    .gomb{
+       display: none;
+    }
+    .circle {
+      display: none;
+   }
+   .gomb44{
+    display: none;
+ }
+ .gomb33{
+  display: none;
+}
+  .gomb22{
+    display: none;
+ }
+  .gomb11{
+    display: none;
+ }
+  .gomb{
+    display: none;
+ }
+  .gomb2{
+    display: none;
+ }
+  .gomb3{
+    display: none;
+ }
+  .gomb4{
+    display: none;
+ }
+  .gomb69{
+    display: none;
+ }
+}
+
+
+hr{
+  color: black;
+}
+
+.margocska {
+  margin-right: 3rem!important;
+  margin-left: 3rem!important;
+}
+
+@media (max-width: 1200px) 
+{
+   .margocska
+   {
+      margin-right: 0rem!important;
+      margin-left: 0rem!important;
+
+
+   }
+}
+
+h1{
+  font-weight:900;
+}
+
+hr{
+  width: 70%;
+}
+
+.szurke{
+  background-color: #696969;
+  width: 100%;
+  border-radius: 5px;
+}
