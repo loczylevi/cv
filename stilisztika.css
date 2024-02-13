@@ -39,6 +39,9 @@ body{
 
 
 }
+ol.c {
+  list-style-type: upper-roman;
+}
 
 
 #feher_szoveg{
@@ -311,4 +314,12 @@ hr{
   background-color: #696969;
   width: 100%;
   border-radius: 5px;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+.margocska {
+  margin-right: 1.5rem!important;
+  margin-left: 1.5rem!important;
 }
